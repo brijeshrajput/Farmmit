@@ -1,0 +1,34 @@
+{
+  "wizards": [
+    {
+      "title": "Welcome to Mint",
+      "description": "Welcome to Farmmit v.1.0 farmer edition. Combining the real meaning of Great UI & UX and Control in one app.",
+      "thumbnail": "guide_one"
+    },
+    {
+      "title": "Luxurious Design",
+      "description": "Mint developed for everyone who cares about good design and friendly UX. If you don't care, mint won't ever fit you! ''Styles come and go. Good design is a language, not a style.''\n— Massimo Vignelli.",
+      "thumbnail": "guide_two"
+    },
+    {
+      "title": "Remote Config",
+      "description": "What is better than controlling your app on the fly? Nothing! 'Control' is the right word when using Mint Console. Change the design, track your app, send notifications and more from one place. Mint console is available for Windows, Mac, Linux, Android and IOS.\nWhat is more?",
+      "thumbnail": "guide_three"
+    },
+    {
+      "title": "Customizable",
+      "description": "Customize design online with more than 17+ different element's design to choose from. Just one click and the new design will be applied immediately!",
+      "thumbnail": "guide_four"
+    },
+    {
+      "title": "WordPress",
+      "description": "Full support for your WordPress posts. Just add your website URL and done! Your WordPress is now setup. What about design? You have more than +7 different designs to choose from.",
+      "thumbnail": "guide_five"
+    },
+    {
+      "title": "",
+      "description": "Sorry, the text was so fast, so you didn't see it. That's how it works. We are proud of the truth that this app can handle up to 100000 users every day. However, it will consume only ~ 7.609375 GB of your monthly bandwidth.",
+      "thumbnail": "guide_six"
+    }
+  ]
+}

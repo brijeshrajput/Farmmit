@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2021. BR Projects
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate android:fromYDelta="75%p" android:toYDelta="0%p" android:fillAfter="true" android:duration="500"/>
+</set>

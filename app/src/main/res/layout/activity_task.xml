@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".activities.TaskActivity">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="350dp"
+            android:src="@drawable/planting"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textColor="#0d6e6a"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore Jobs"
+            android:textColor="#0d6e6a"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/viewjob"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons_bg"
+            android:text="View Jobs"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="40dp" />
+
+        <Button
+            android:id="@+id/createjob"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons_bg"
+            android:text="Create Jobs"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        tools:context=".activities.ForgetPassActivity">
+
+        <ImageView
+            android:layout_width="500dp"
+            android:layout_height="350dp"
+            android:src="@drawable/planting"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password"
+            android:textColor="#0d6e6a"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.03"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:background="@drawable/inputs_bg"
+            android:text="Email"
+            android:textColor="#0d6e6a"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="40dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"/>
+
+
+        <Button
+            android:id="@+id/btnForgetpass"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttons_bg"
+            android:text="Reset"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/lgnbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Don't have an account? Sign Up"
+            android:textColor="#0d6e6a"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+</layout>
