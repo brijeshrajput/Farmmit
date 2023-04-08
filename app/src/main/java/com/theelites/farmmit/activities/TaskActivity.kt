@@ -18,7 +18,7 @@ class TaskActivity : AppCompatActivity() {
         }
 
         binding.createjob.setOnClickListener {
-
+            startActivity(Intent(this@TaskActivity, JobCreateActivity::class.java))
         }
     }
 }

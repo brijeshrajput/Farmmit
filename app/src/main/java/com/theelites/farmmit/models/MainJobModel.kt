@@ -11,7 +11,7 @@ data class MainJobModel (
     val title: String? ,
     val description: String? ,
     val howToApply: String? ,
-    val companyLogo: String? ,
+    val categoryLogo: String? ,
     var is_mark : Int
 
 )
