@@ -130,7 +130,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_toEndOf="@id/iconLocation"
-                            android:text="@{item.location}"
+                            android:text="@{viewModel.formatLocation(item.latitudee, item.longitudee)}"
                             android:textSize="12sp"
                             android:textColor="@color/gray_400"
                             android:singleLine="true"
@@ -184,10 +184,11 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:src="@{item.is_mark == 1 ? @drawable/ic_marked : @drawable/ic_mark}"
+                    android:src="@{item.ismark == true ? @drawable/ic_marked : @drawable/ic_mark}"
                     android:layout_alignParentEnd="true"
                     android:padding="3dp"
-                    app:tint="@color/gray_200"/>
+                    app:tint="@color/gray_200"
+                    android:contentDescription="job image" />
 
             </RelativeLayout>
         </LinearLayout>

@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable
-            name="profile"
-            type="com.theelites.farmmit.models.ProfileModel" />
 
     </data>
 
@@ -15,7 +12,7 @@
         android:background="@color/white"
         android:layout_weight="2"
         android:layout_height="match_parent"
-        tools:context=".activities.ProfileActivity">
+        tools:context=".activities.CreateCategoryActivity">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -34,7 +31,8 @@
                 app:srcCompat="@drawable/ico_back"
                 android:background="?android:selectableItemBackground"
                 android:layout_height="match_parent"
-                app:tint="@color/black" />
+                app:tint="@color/black"
+                android:contentDescription="back button" />
         </LinearLayout>
 
         <LinearLayout
@@ -58,7 +56,7 @@
                 android:fontFamily="sans-serif-black"
                 android:shadowColor="@color/black"
                 android:shadowRadius="0.6"
-                android:text="Edit Profile"
+                android:text="Create Category"
                 android:textSize="28sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -96,7 +94,8 @@
                 android:layout_marginBottom="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:srcCompat="@drawable/ic_camera" />
+                app:srcCompat="@drawable/ic_camera"
+                android:contentDescription="icon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -127,24 +126,6 @@
                     android:layout_marginBottom="45dp"
                     android:orientation="vertical">
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="6dp"
-                        android:paddingStart="6dp"
-                        android:paddingEnd="6dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/emailu"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="6dp"
-                            android:editable="false"
-                            android:focusable="false"
-                            android:hint="Email"
-                            android:inputType="textEmailAddress" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
                     <View
                         android:layout_width="match_parent"
@@ -161,11 +142,11 @@
                         android:paddingEnd="6dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/fname"
+                            android:id="@+id/categoryName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
-                            android:hint="Full Name"
+                            android:hint="Category Name"
                             android:maxLines="1"
                             android:singleLine="true" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -175,48 +156,6 @@
                         android:layout_height="1dp"
                         android:layout_marginTop="15dp"
                         android:background="@color/ProfileViewLines" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="6dp"
-                        android:paddingStart="6dp"
-                        android:paddingEnd="6dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/phone"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="6dp"
-                            android:hint="Phone no."
-                            android:maxLines="1"
-                            android:singleLine="true" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="15dp"
-                        android:background="@color/ProfileViewLines" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="6dp"
-                        android:paddingStart="6dp"
-                        android:paddingEnd="6dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/address"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawablePadding="6dp"
-                            android:hint="Address"
-                            android:maxLines="1"
-                            android:singleLine="true" />
-                    </com.google.android.material.textfield.TextInputLayout>
 
 
                     <View
@@ -235,7 +174,7 @@
                         android:elevation="10dp"
                         android:outlineSpotShadowColor="@color/black"
                         android:shadowColor="@color/black"
-                        android:text="Update"
+                        android:text="Create"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 

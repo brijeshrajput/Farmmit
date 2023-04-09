@@ -91,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
         Log.i("Bunty", "$currentUser")
 
         if(currentUser != null){
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, TaskActivity::class.java))
             finish()
             //checkVersion(2, 1)
         }

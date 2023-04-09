@@ -12,6 +12,9 @@ data class MainJobModel (
     val description: String? ,
     val howToApply: String? ,
     val categoryLogo: String? ,
-    var is_mark : Int
-
-)
+    var ismark : Boolean,
+    val latitudee:String?,
+    val longitudee:String?
+){
+    constructor():this("0",null,null,null,null,null,null,null,null,null,null,false,null,null)
+}

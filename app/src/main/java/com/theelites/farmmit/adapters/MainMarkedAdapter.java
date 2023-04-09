@@ -29,7 +29,7 @@ public class MainMarkedAdapter extends RecyclerView.Adapter<MainMarkedAdapter.Re
     private List<MainJobModel> data;
     private MainViewModel viewModel;
 
-    protected MainMarkedAdapter(List<MainJobModel> data, MainViewModel viewModel) {
+    public MainMarkedAdapter(List<MainJobModel> data, MainViewModel viewModel) {
         this.data = data;
         this.viewModel = viewModel;
     }
@@ -72,7 +72,7 @@ public class MainMarkedAdapter extends RecyclerView.Adapter<MainMarkedAdapter.Re
         @SuppressLint("UseCompatLoadingForDrawables")
         void bind(@NonNull MainJobModel data, MainViewModel viewModel) {
             Glide.with(binding.photoPreview.getContext())
-                    .load(data.getCompanyLogo())
+                    .load(data.getCategoryLogo())
                     .error(binding.photoPreview.getContext().getDrawable(R.drawable.ic_round_business_center_24))
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .listener(new RequestListener<Drawable>() {

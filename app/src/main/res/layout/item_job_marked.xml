@@ -111,7 +111,7 @@
                     android:id="@+id/mark"
                     android:layout_width="30dp"
                     android:layout_height="40dp"
-                    android:src="@{item.is_mark == 1 ? @drawable/ic_marked : @drawable/ic_mark}"
+                    android:src="@{item.ismark == true ? @drawable/ic_marked : @drawable/ic_mark}"
                     android:layout_alignParentEnd="true"
                     android:padding="3dp"
                     app:tint="@color/gray_200"/>

@@ -5,7 +5,7 @@
     <data>
         <variable
             name="item"
-            type="id.haerulmuttaqin.jobfinder.data.entity.GithubJob" />
+            type="com.theelites.farmmit.models.MainJobModel" />
     </data>
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -347,7 +347,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?attr/selectableItemBackgroundBorderless"
-                    android:src="@{item.is_mark == 1 ? @drawable/ic_marked : @drawable/ic_mark}"
+                    android:src="@{item.ismark == true ? @drawable/ic_marked : @drawable/ic_mark}"
                     app:tint="@color/green_200"
                     android:layout_centerInParent="true"
                     android:layout_width="25dp"

@@ -60,7 +60,7 @@
 
                     <TextView
                         android:id="@+id/secondaryText"
-                        android:text="Find your perfect job"
+                        android:text="Find your perfect work"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/welcomeText"
@@ -81,7 +81,7 @@
                         android:layout_marginTop="42dp"
                         android:layout_marginEnd="16dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/ic_baseline_more_vert_24"
+                        android:src="@drawable/ic_person"
                         android:paddingBottom="10dp"
                         app:tint="@color/white"/>
 
@@ -177,7 +177,7 @@
 
                         <TextView
                             android:id="@+id/markedTitle"
-                            android:text="Marked Job"
+                            android:text="Marked Work"
                             android:textSize="16dp"
                             android:textColor="@color/gray_600"
                             android:layout_marginStart="21dp"
@@ -218,7 +218,7 @@
 
                         <TextView
                             android:id="@+id/recommendedTitle"
-                            android:text="Recommended Job"
+                            android:text="Recommended Work"
                             android:textSize="16dp"
                             android:textColor="@color/gray_600"
                             android:layout_marginStart="21dp"

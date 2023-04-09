@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable
-            name="createJob"
-            type="com.theelites.farmmit.models.ProfileModel" />
 
     </data>
 
@@ -34,7 +31,8 @@
                 app:srcCompat="@drawable/ico_back"
                 android:background="?android:selectableItemBackground"
                 android:layout_height="match_parent"
-                app:tint="@color/black" />
+                app:tint="@color/black"
+                android:contentDescription="Back Button" />
         </LinearLayout>
 
         <LinearLayout
@@ -58,7 +56,7 @@
                 android:fontFamily="sans-serif-black"
                 android:shadowColor="@color/black"
                 android:shadowRadius="0.6"
-                android:text="Create Job"
+                android:text="Create Work"
                 android:textSize="28sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -100,14 +98,13 @@
                         android:paddingEnd="6dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/fnameu"
+                            android:id="@+id/jobName"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
-                            android:hint="Job Name"
+                            android:hint="Work Name"
                             android:maxLines="1"
-                            android:singleLine="true"
-                            android:text="@{profile.name}" />
+                            android:singleLine="true" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <View
@@ -125,14 +122,13 @@
                         android:paddingEnd="6dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/phnnou"
+                            android:id="@+id/phone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
                             android:hint="Phone no."
                             android:maxLines="1"
-                            android:singleLine="true"
-                            android:text="@{profile.phone}" />
+                            android:singleLine="true" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <View
@@ -152,7 +148,7 @@
                         app:helperTextTextColor="#2C852F">
 
                         <com.google.android.material.textfield.MaterialAutoCompleteTextView
-                            android:id="@+id/corsu"
+                            android:id="@+id/reqCategory"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
@@ -162,11 +158,12 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <TextView
-                        android:id="@+id/textView"
+                        android:id="@+id/createcategory"
                         android:layout_width="match_parent"
-                        android:textColor="@color/blue_500"
+                        android:textColor="@color/blue_300"
                         android:layout_height="wrap_content"
-                        android:text="Create Category" />
+                        android:text="Create Category here"
+                        android:layout_marginTop="10dp"/>
 
                     <View
                         android:layout_width="match_parent"
@@ -183,14 +180,13 @@
                         android:paddingEnd="6dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/fnameu"
+                            android:id="@+id/reqDate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
                             android:hint="Date"
                             android:maxLines="1"
-                            android:singleLine="true"
-                            android:text="@{profile.name}" />
+                            android:singleLine="true" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <View
@@ -208,14 +204,13 @@
                         android:paddingEnd="6dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/fnameu"
+                            android:id="@+id/reqTime"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
                             android:hint="Time"
                             android:maxLines="1"
-                            android:singleLine="true"
-                            android:text="@{profile.name}" />
+                            android:singleLine="true" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <View
@@ -233,14 +228,13 @@
                         android:paddingEnd="6dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/fnameu"
+                            android:id="@+id/reqPerson"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:drawablePadding="6dp"
                             android:hint="Required Person"
                             android:maxLines="1"
-                            android:singleLine="true"
-                            android:text="@{profile.name}" />
+                            android:singleLine="true" />
                     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -264,7 +258,7 @@
                         android:elevation="10dp"
                         android:outlineSpotShadowColor="@color/black"
                         android:shadowColor="@color/black"
-                        android:text="Update"
+                        android:text="Create Job"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold" />
 

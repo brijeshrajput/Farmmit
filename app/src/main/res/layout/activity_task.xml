@@ -31,7 +31,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Explore Jobs"
+            android:text="Explore"
             android:textColor="#0d6e6a"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -41,7 +41,7 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@drawable/buttons_bg"
-            android:text="View Jobs"
+            android:text="View Work"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#FFF"
@@ -52,7 +52,7 @@
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@drawable/buttons_bg"
-            android:text="Create Jobs"
+            android:text="Create work"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#FFF"

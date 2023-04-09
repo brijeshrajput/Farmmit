@@ -72,7 +72,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.RecyclerViewAd
         @SuppressLint("UseCompatLoadingForDrawables")
         void bind(@NonNull MainJobModel data, MainViewModel viewModel) {
             Glide.with(binding.photoPreview.getContext())
-                    .load(data.getCompanyLogo())
+                    .load(data.getCategoryLogo())
                     .error(binding.photoPreview.getContext().getDrawable(R.drawable.ic_round_business_center_24))
                     .transition(DrawableTransitionOptions.withCrossFade())
                     .listener(new RequestListener<Drawable>() {
